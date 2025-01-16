@@ -2996,7 +2996,7 @@ blockquote {
   background-color: var(--primary);
   width: 38.9vw;
   height: .6vw;
-  margin-top: 40px;
+  margin-top: 60px;
   position: relative;
   top: -2.28vw;
   left: auto;
@@ -3062,7 +3062,8 @@ blockquote {
 
 .medium-text {
   margin-bottom: 1rem;
-  font-size: 4vw;
+  padding-bottom: 10px;
+  font-size: 3vw;
   font-weight: 700;
   line-height: 3.7vw;
 }
@@ -3217,7 +3218,7 @@ blockquote {
   max-width: 33.3vw;
   min-height: auto;
   max-height: 50%;
-  padding: 3vw 2.6vw;
+  padding: 3vw 2.6vw 2.8vw;
   line-height: 1.2vw;
   display: flex;
 }
@@ -3253,11 +3254,13 @@ blockquote {
   grid-row-gap: 1.11vw;
   justify-content: center;
   align-items: flex-start;
-  width: 90%;
-  min-width: auto;
-  min-height: auto;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 0;
   display: flex;
 }
 
@@ -3272,7 +3275,7 @@ blockquote {
   max-width: 33.3vw;
   min-height: auto;
   max-height: 20vw;
-  padding: 3.5vw 2.6vw;
+  padding: 3.4vw 2.6vw 4vw;
   display: flex;
 }
 
@@ -3291,7 +3294,8 @@ blockquote {
   max-width: 16.1vw;
   min-height: 16.1vw;
   max-height: 16.1vw;
-  padding: 1vw 1vw 0;
+  margin-bottom: 0;
+  padding: 3vw 1vw 15vw;
   display: flex;
 }
 
@@ -3744,12 +3748,14 @@ blockquote {
 }
 
 .max-width-30rem {
+  text-align: justify;
   width: auto;
   min-width: auto;
   max-width: none;
   min-height: auto;
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 2vw;
 }
 
 .title-block {
@@ -4291,7 +4297,7 @@ blockquote {
 .text-block-3 {
   color: var(--white);
   margin-top: 20px;
-  font-size: 1.11vw;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.8vw;
   display: flex;
@@ -4308,7 +4314,7 @@ blockquote {
 
 .text-block-5 {
   margin-top: 10px;
-  font-size: 1.11vw;
+  font-size: 13px;
   font-weight: 300;
   line-height: 1.6vw;
 }
@@ -4316,6 +4322,8 @@ blockquote {
 .hero-heading-center {
   background-color: #f5f7fa;
   border-bottom: 1px solid #e4ebf3;
+  width: 100%;
+  min-width: 100%;
   padding: 80px 30px;
   position: relative;
 }
@@ -4343,7 +4351,10 @@ blockquote {
   object-fit: contain;
   justify-content: space-between;
   align-items: center;
-  min-width: auto;
+  width: 100%;
+  min-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
@@ -4367,13 +4378,15 @@ blockquote {
 }
 
 .margin-bottom-24px {
+  text-align: justify;
   min-width: auto;
   min-height: auto;
   margin-bottom: auto;
   padding-top: 0;
   padding-bottom: 40px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
+  line-height: 2vw;
 }
 
 .button-primary {
@@ -4415,11 +4428,11 @@ blockquote {
 }
 
 .heading {
-  margin-top: 1rem;
+  margin-top: 0;
   padding-bottom: 10px;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
-  line-height: 19px;
+  line-height: 23px;
 }
 
 .code {
@@ -4450,22 +4463,23 @@ blockquote {
 
 .heading-3 {
   margin-top: 1rem;
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 17px;
+  line-height: 23px;
 }
 
 .footer-light {
   background-color: #fff;
   border-bottom: 1px solid #e4ebf3;
-  padding: 80px 30px 40px;
+  padding: 80px 0 40px;
   position: relative;
 }
 
 .container-3 {
   width: 100%;
+  min-width: 100%;
   max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .footer-wrapper-two {
@@ -4505,6 +4519,7 @@ blockquote {
 
 .footer-form-container {
   background-color: var(--white);
+  min-width: auto;
 }
 
 .footer-form-block {
@@ -4567,10 +4582,10 @@ blockquote {
   background-color: #000;
   justify-content: space-between;
   align-items: center;
-  min-width: auto;
+  min-width: 100%;
   min-height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   text-decoration: none;
@@ -4597,6 +4612,10 @@ blockquote {
 
 .image, .image-2 {
   background-color: #dbec62;
+}
+
+.paragraph, .paragraph-2, .paragraph-3 {
+  font-size: 13px;
 }
 
 @media screen and (max-width: 991px) {
@@ -5718,6 +5737,10 @@ blockquote {
     display: none;
   }
 
+  .space-7rem {
+    margin-top: 20px;
+  }
+
   .max-width-38rem {
     max-width: 28rem;
   }
@@ -5789,6 +5812,10 @@ blockquote {
     flex-flow: wrap;
     justify-content: center;
     align-items: center;
+  }
+
+  .medium-text {
+    font-size: 3rem;
   }
 
   .icon {
@@ -5905,12 +5932,19 @@ blockquote {
     max-height: 47rem;
   }
 
+  .cta-card.slide-down-animation {
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .cta-wrapper {
     top: -23.5rem;
   }
 
   .max-width-30rem {
     max-width: 21rem;
+    line-height: 4vw;
   }
 
   .hero-title {
@@ -6003,8 +6037,25 @@ blockquote {
     max-height: 5.6rem;
   }
 
+  .text-block-3, .text-block-5 {
+    line-height: 4vw;
+  }
+
   .hero-heading-center {
     padding: 60px 15px;
+  }
+
+  .margin-bottom-24px {
+    line-height: 4vw;
+  }
+
+  .heading {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .heading-2 {
+    line-height: 5vw;
   }
 
   .footer-light {
@@ -6069,8 +6120,21 @@ blockquote {
     border-bottom-left-radius: 3rem;
   }
 
+  .background-black {
+    min-width: auto;
+    min-height: 100%;
+  }
+
   .section {
-    margin-top: 30px;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    text-align: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    display: block;
   }
 
   .utilities-grid-thirds {
@@ -6432,10 +6496,15 @@ blockquote {
 
   .cta-container {
     background-color: var(--primary);
-    min-width: 22%;
-    max-width: 100%;
+    min-width: auto;
+    max-width: none;
+    height: 100%;
     min-height: auto;
-    max-height: 100%;
+    max-height: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    overflow: visible;
   }
 
   .cta-card {
@@ -6450,6 +6519,8 @@ blockquote {
   }
 
   .cta-card.slide-down-animation {
+    min-width: auto;
+    min-height: auto;
     max-height: 100%;
     padding: 0 1rem;
   }
@@ -6460,8 +6531,11 @@ blockquote {
   }
 
   .max-width-30rem {
+    text-align: center;
     max-width: 100%;
     max-height: 100%;
+    font-weight: 400;
+    line-height: 5vw;
   }
 
   .title-block {
@@ -6628,14 +6702,27 @@ blockquote {
     margin-bottom: 24px;
   }
 
+  .hero-wrapper {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+  }
+
   .hero-split {
+    margin-bottom: 0;
     padding-bottom: 20px;
   }
 
   .margin-bottom-24px {
-    padding-left: 20px;
-    padding-right: 20px;
+    text-align: center;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 13px;
+    font-weight: 400;
+    line-height: 4.5vw;
   }
 
   .button-primary {
@@ -6662,6 +6749,7 @@ blockquote {
     width: auto;
     min-width: auto;
     min-height: auto;
+    padding-top: 10px;
     font-size: 9vw;
     line-height: 2.5rem;
     display: flex;
@@ -6707,4 +6795,3 @@ blockquote {
     font-size: 1rem;
   }
 }
-
